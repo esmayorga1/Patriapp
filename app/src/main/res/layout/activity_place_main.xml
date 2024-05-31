@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".placeMain"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Bienvenida -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+
+            <!-- Textos encima del otro -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bienvenido"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginStart="12dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="PatrimApp"
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    android:textSize="16sp"
+                    android:layout_marginStart="12dp"
+                    />
+            </LinearLayout>
+
+            <!-- Botón a la derecha -->
+            <ImageView
+                android:id="@+id/cerrar_sesion"
+                app:srcCompat="@mipmap/cerrar_sesion"
+                android:layout_gravity="end"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+        </LinearLayout>
+
+        <!-- Contenido de bienvenida -->
+
+        <!-- Título de categorías -->
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="Patrimonio Cultural: Coordenadas Lugares Históricos "
+            android:textColor="#03A9F4"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Título de productos -->
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Lugares"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            />
+
+    </LinearLayout>
+
+    <!-- Contenedor de productos -->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/productoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Aquí se mostrarán los productos -->
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Elementos de la barra de navegación -->
+
+        <ImageView
+            android:id="@+id/registros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/contar_1"
+            android:layout_gravity="bottom|start"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="24dp"
+            />
+
+        <ImageView
+            android:id="@+id/cartIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Add"
+            android:src="@mipmap/base_2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar lugar -->"
+            android:layout_gravity="center_vertical|center"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>

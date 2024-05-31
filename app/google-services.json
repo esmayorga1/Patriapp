@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "326536434284",
+    "project_id": "patrimapp-7dac8",
+    "storage_bucket": "patrimapp-7dac8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326536434284:android:403eaf3f018f864e593e49",
+        "android_client_info": {
+          "package_name": "com.example.patrimapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7dqyOzWMoVc2oA1yJag1nWgyrhN9C3IU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
